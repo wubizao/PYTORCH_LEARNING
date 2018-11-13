@@ -29,7 +29,7 @@ python -m visdom.server
 
 ```
 # 在gpu0上训练,并把可视化结果保存在visdom 的classifier env上
-python main.py train --train-data-root=./data/train --use-gpu=True --env=classifier
+python main.py train --train_data_root=./data/train --use-gpu=True --env=classifier
 ```
 
 
@@ -41,5 +41,5 @@ python main.py help
 ## 测试
 
 ```
-python main.py test --data-root=./data/test --use-gpu=False --batch-size=256
+python main.py test --test_data_root=./data/test1 --use-gpu=False --batch-size=256
 ```
